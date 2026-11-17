@@ -1,0 +1,172 @@
+while True:
+    print("===============================================")
+    print("           <<<  PYTHON LESSONS  >>>            ")
+    print("===============================================")
+
+    print("\n PRELIM LESSONS")
+    print("1. Introduction to Python")
+    print("2. What is Programming?")
+    print("3. Python print() Function")
+    print("4. Python Comments")
+    print("5. Variables and Data Types")
+    print("6. Arithmetic Operators")
+    print("\n MIDTERM LESSONS")
+    print("7. The input() Function")
+    print("8. F-Strings (Formatted Strings)")
+    print("9. Conditional Statements")
+
+    print("\n FINAL LESSON")
+    print("10. Looping Structures")
+
+    print("\n0. Exit")
+    print("======================================================")
+
+    choice = input("Enter your choice (0-10): ")
+
+    if choice == "1":
+        print("\n--- 1. INTRODUCTION TO PYTHON ---")
+        print("Python is a high-level, general-purpose programming language.")
+        print("It was created by Guido van Rossum and first released in 1991.")
+        print("Python is known for its simple, readable syntax — great for beginners!")
+        answer = input("\n Quiz: Who created Python? \nAnswer: ")
+        if "guido" in answer.lower():
+            print("Correct! Nice!")
+        else:
+            print("Wrong. The answer is: Guido van Rossum")
+
+    elif choice == "2":
+        print("\n--- 2. WHAT IS PROGRAMMING? ---")
+        print("Programming is the process of giving instructions to a computer.")
+        print("A set of instructions is called a 'program' or 'code'.")
+        print("Programming lets us build apps, websites, games, and more!")
+        answer = input("\n Quiz: What do we call a set of instructions for a computer? \nAnswer: ")
+        if "program" in answer.lower() or "code" in answer. lower():
+            print("Correct! Nice!")
+        else:
+            print("Wrong. The answer is: program or code")
+
+    elif choice == "3":
+        print("\n--- 3. PYTHON print() FUNCTION ---")
+        print("The print() function outputs text or values to the screen.")
+        print("Syntax: print('Your message here')")
+        print("Example: print('Hello World') → Output: Hello World")
+        answer = input("\n Quiz: What function displays output in Python? \nAnswer: ")
+        if "print" in answer.lower():
+            print("Correct! Nice!")
+        else:
+            print("Wrong. The answer is: print()")
+
+    elif choice == "4":
+        print("\n--- 4. PYTHON COMMENTS ---")
+        print("Comments are notes in your code — Python ignores them.")
+        print("• Single-line comment: Use #  →  # This is a comment")
+        print("• Multi-line comment: Use triple quotes → ''' comment here '''")
+        answer = input("\n Quiz: What symbol starts a single-line comment? \nAnswer: ")
+        if answer == "#":
+            print("Correct! Nice!")
+        else:
+            print("Wrong. The answer is: # (hash symbol)")
+
+    elif choice == "5":
+        print("\n--- 5. VARIABLES AND DATA TYPES ---")
+        print("Variables = containers that store data values.")
+        print("Use = to assign a value:  variable_name = value")
+        print("\nCommon Data Types:")
+        print("• String: text inside quotes → name = 'Ana'")
+        print("• Integer: whole number → age = 20")
+        print("• Float: decimal number → price = 99.99")
+        print("• Boolean: True or False → is_student = True")
+        answer = input("\n Quiz: What symbol assigns a value to a variable? \nAnswer: ")
+        if answer == "=":
+            print("Correct! Nice!")
+        else:
+            print("Wrong. The answer is: = (equals sign)")
+
+    elif choice == "6":
+        print("\n--- 6. ARITHMETIC OPERATORS ---")
+        print("Used for math calculations:")
+        print("  +  Addition        5 + 2 = 7")
+        print("  -  Subtraction     5 - 2 = 3")
+        print("  *  Multiplication  5 * 2 = 10")
+        print("  /  Division        10 / 2 = 5")
+        print("  %  Modulus (remainder)  7 % 2 = 1")
+        print("  ** Exponent        2 ** 3 = 8")
+        answer = int(input("\n Quiz: If a = 6 and b = 4, what is a * b? \nAnswer: "))
+        if answer == 24:
+            print("Correct! Nice!")
+        else:
+            print("Wrong answer 6 × 4 = 24")
+
+    elif choice == "7":
+        print("\n--- 7. THE input() FUNCTION ---")
+        print("input() lets the user enter data from the keyboard.")
+        print("By default, input() returns a STRING.")
+        print("\nExamples:")
+        print("  name = input('Enter your name: ')")
+        print("  age = int(input('Enter your age: '))")
+        print("  price = float(input('Enter price: '))")
+        answer = input("\n Quiz: What function gets data from the user? \nAnswer: ")
+        if "input" in answer.lower():
+            print("Correct! Nice!")
+        else:
+            print("Wrong. The answer is: input()")
+
+    elif choice == "8":
+        print("\n--- 8. F-STRINGS (FORMATTED STRINGS) ---")
+        print("F-strings make it easy to put variables inside text.")
+        print("Just add f before the quotes and use {} for variables.")
+        print("\nExample:")
+        print("  name = 'Maria'")
+        print("  print(f'Hello, {name}!') → Output: Hello, Maria!")
+        answer = input("\n Quiz: What letter do you type before the quotes in an f-string? \nAnswer: ")
+        if answer.lower() == "f":
+            print("Correct! nice!")
+        else:
+            print("Wrong. The answer is: f")
+
+    elif choice == "9":
+        print("\n--- 9. CONDITIONAL STATEMENTS ---")
+        print("Conditionals let your code make DECISIONS.")
+        print("They check if a condition is True or False.")
+        print("\nKeywords: if → elif → else")
+        print("\nExample:")
+        print("  score = 85")
+        print("  if score >= 90:")
+        print("      print('Excellent!')")
+        print("  elif score >= 75:")
+        print("      print('Passed!')")
+        print("  else:")
+        print("      print('Failed')")
+        answer = input("\nQuiz: What keyword starts a conditional check? \nAnswer: ")
+        if answer.lower() == "if":
+            print("Correct! Nice!")
+        else:
+            print("Wrong. The answer is: if")
+
+    elif choice == "10":
+        print("\n--- 10. LOOPING STRUCTURES ---")
+        print("Loops let you repeat code without typing it multiple times.")
+        print("\n for-loop — repeats a specific number of times:")
+        print("  for i in range(3):")
+        print("      print('Hi!')  # Prints 3 times")
+        print("\n while-loop — repeats while condition is True:")
+        print("  count = 1")
+        print("  while count <= 3:")
+        print("      print(count)")
+        print("      count = count + 1")
+        answer = input("\n Quiz: Which loop is commonly used to count through a sequence? \nAnswer: ")
+        if "for" in answer.lower():
+            print("Correct! Nice! ")
+        else:
+            print("Wrong. The answers: for-loop or while-loop")
+
+    elif choice == "0":
+        print("\nExiting Python lesson...")
+        print("Keep practicing! you doing nice! ") 
+        break
+    else:
+        print("\nInvalid choice! Please enter a number from 0 to 10.")
+    
+    input("\nEnter to return to the menu...")
+    print()
+    
